@@ -12,13 +12,13 @@ Identify the exact framework architecture used to align this project without cop
 
 ## Candidate baseline
 
-- Project identity: `majikmushi/WiiArtDownloader` (repository locator; a distinct project-instance identifier remains to be assigned if needed).
+- Project identity: `majikmushi/SourceAnalyser` (renamed from `majikmushi/WiiArtDownloader`; repository locator, with a distinct project-instance identifier still to be assigned if needed).
 - Framework source: `majikmushi/AgentZeroFramework`.
 - Candidate commit: `2c7872e70d68b690f99cc216fc07ba3411224aeb`.
 - Adoption state: **proposed; no active framework baseline recorded yet**.
 - Applicable starting references at that commit: `AGENTS.md`, `000-UPDATE/README.md`, `000-UPDATE/00-work-rules.md`, `000-UPDATE/MODEL-ROUTING.md`, and approved addenda 24, 25, 26, and 27 for roles, project semantics, revisions, and project instantiation.
 
-Approval of a project baseline requires a recorded project decision naming the exact revision and scope. It does not assert that the framework runtime is installed, that agent capabilities have been qualified, or that AgentZero's Phase 09 implementation is ready for WiiArtDownloader. Future framework releases require compatibility review and explicit adoption; repository paths and `latest` do not select new semantics.
+Approval of a project baseline requires a recorded project decision naming the exact revision and scope. It does not assert that the framework runtime is installed, that agent capabilities have been qualified, or that AgentZero's Phase 09 implementation is ready for SourceAnalyser. Future framework releases require compatibility review and explicit adoption; repository paths and `latest` do not select new semantics.
 
 ## Project-owned semantics
 

@@ -4,9 +4,9 @@ type: project-index
 status: draft
 ---
 
-# WiiArtDownloader
+# SourceAnalyser
 
-This repository is preparing a staged Python-assisted analyser and a separate, evidence-based analysis of selected C# source to support later refactoring or reimplementation. No source analysis is authorized or complete yet. The source will be uploaded after the project scaffold is reviewed.
+This repository is preparing a reusable, staged Python-assisted analyser, initially focused on C#, with WiiArtDownloader as its first analysis application. Analyser development and evidence-based analysis of selected source remain separate tracks supporting later refactoring or reimplementation. No source analysis is authorized or complete yet.
 
 - [PROJECT.md](PROJECT.md): project objectives, separate tracks, and stage map.
 - [FRAMEWORK-BASELINE.md](FRAMEWORK-BASELINE.md): proposed exact AgentZeroFramework dependency and adoption state.
@@ -20,4 +20,4 @@ This repository is preparing a staged Python-assisted analyser and a separate, e
 - `Analyser/Source/Incoming/`: holding area for later user-supplied source.
 - `Analyser/Transient/`: scratchpad notes, including the original Stage 00 notes.
 
-Current state: foundation scaffold under review. NikolaTesla will flesh out requirements, architecture, and proposed stages before a later stage, role, and agent-assignment alignment pass. Neither track has advanced to source processing.
+Current state: NikolaTesla's first design pass is discussing purpose, scope, limitations, and requirements. The user-approved checkpoint is on `docs/design-research-handoff`; detailed requirements remain draft and the design task is incomplete. Architecture and the later stage, role, and agent-assignment alignment pass remain ahead. Neither track has advanced to source processing.

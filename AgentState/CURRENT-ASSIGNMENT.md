@@ -5,44 +5,62 @@ status: draft
 stage: 00
 ---
 
-# Current assignment and handoff
+# Current assignment and design checkpoint
 
-## Objective and scope
+## Checkpoint
 
-Prepare the project objectives, two-track document structure, standards, rules, state records, source intake area, and candidate traceability requirements for user review. Remove redundant explanatory documents and empty unrelated placeholders. This pass is documentation and scaffold work only. Branch under review: `docs/stage-0-transient-source`. Base commit for the draft: `f22aa7df0fe81b14f6c9ddc6ede401a4e956cbae`.
+Repository: `majikmushi/SourceAnalyser`, formerly `majikmushi/WiiArtDownloader`.
+Checkpoint branch: `docs/design-research-handoff`.
+Base main revision: `7042f43007b536dac8fa5072b3d15efca7b91c5c`.
 
-## Permitted inputs and writes
+The user approved committing the accumulated design drafts and handover (D-023). This is an incomplete design checkpoint, not completion of the design task. The original request was to establish requirements, constraints, outcomes and questions before architecture; later discussion explored candidate mechanisms without selecting an architecture.
 
-- Read: existing project documentation and the transient Stage 00 scratchpad; applicable AgentZeroFramework rules and approved project/role architecture at the candidate revision in BASE-FWK-001.
-- Exact source read list: `[]`.
-- Write: project entry documents, `AgentRoles/`, `AgentState/`, `Analyser/Docs/`, and descriptive folder scaffolding under `Analyser/Source/` and `Analyser/Output/`; remove the two unrelated empty root placeholders and retire the Designer-only `AGENT.md` in favour of the split entrypoint and role document.
-- No source editing, source inspection, analyser implementation, or real-source testing is assigned.
+## Confirmed direction
+
+- A reusable, staged source-analysis tool and process, initially supporting C#, with WiiArtDownloader as its first application (D-011, D-013, D-018).
+- Chunking produces small, context-manageable pieces; complete structural or semantic understanding is not a prerequisite (D-017).
+- Preserve source integrity, traceability, connected findings, review and resumable progress.
+- Original Stage 0 notes and the provisional stage outline remain candidate ideas (D-016). All six PROJECT.md objectives are preserved.
+- Tool discovery is simple factual collection by a cheaper agent. Deeper evaluation follows later (D-020).
 
 ## Track state
 
-| Track | Stage | Status | Evidence / remaining gate |
+| Track | Stage | Status | Evidence / remaining work |
 |---|---|---|---|
-| Analyser development | 00 Foundation | design | Objectives, rules, and structure drafted; NikolaTesla design of requirements, architecture, and proposed stages remains ahead. |
-| Code analysis | 00 Foundation | concept | Intake and traceability proposals drafted; exact source selection and baseline await upload and a named-file assignment. |
+| Analyser development | 00 Foundation | design | Confirmed outcome, discussion requirements and collection brief saved. Detailed requirements, constraints, acceptance criteria and architecture remain unfinished. |
+| Code analysis | 00 Foundation | concept | Process requirements drafted. No source selected or inspected; source-specific scope and evidence remain pending. |
 
-No later stage is complete. No analyser tests or source-analysis tests have run.
+No stage is complete. No analyser implementation, source analysis or tool tests have run.
 
-## Decisions and unresolved matters
+## Saved artifacts
 
-- The user directed that the prior Stage 00 notes be treated as transient scratchpad source; the original bytes were moved to `Analyser/Transient/` in commit `f22aa7df0fe81b14f6c9ddc6ede401a4e956cbae` on this branch.
-- The user accepted the proposed project-objective wording for drafting. The full scaffold and any commit still require review.
-- AgentZeroFramework revision `2c7872e70d68b690f99cc216fc07ba3411224aeb` is a candidate dependency; active adoption has not yet been recorded.
-- Exact source filenames, language/project baseline, and the capabilities selected for portability remain unknown until source intake and review.
-- Requirements, architecture, stage boundaries, stage-specific gates, project roles, and agent assignments remain open for NikolaTesla's design pass and the later alignment pass.
-- The two empty root placeholders are slated for removal under the user's cleanup instruction; no substantive source or scratchpad material is deleted.
+- `Analyser/Transient/ANALYSER-REQUIREMENTS-DRAFT.md` — REQ-ANL-001; candidate requirements and questions.
+- `Analyser/Transient/CODE-ANALYSIS-REQUIREMENTS-DRAFT.md` — REQ-SRC-001; candidate analysis requirements and questions.
+- `Analyser/Transient/DESIGN-INPUT-REVIEW.md` — REVIEW-DES-001; original input review and provenance.
+- `Analyser/Docs/AnalyserDesign/Research/STRUCTURAL-ANALYSIS-TOOLS-BRIEF.md` — TASK-ANL-RES-001; four to six tool suggestions against simple criteria, facts and links only.
+- `Analyser/Docs/AnalyserDesign/Research/DESIGN-CHECKPOINT.md` — STATE-ANL-RES-001; design discussion context.
+- `AgentState/DESIGN-HANDOFF.md` — resume information and HANDOFF-FWK-001, the scope-control issue and suggested safeguards for upstream follow-up.
+- `AgentState/DECISIONS.md` — decisions, user corrections and their provenance.
 
-## Next entry point and completion conditions
+Documents remain draft unless an individual decision explicitly records user confirmation. Committing the checkpoint does not accept every proposed requirement.
 
-1. Review the full proposed documentation/scaffold diff against the base commit.
-2. Resolve any requested wording, baseline, or structure changes with the user.
-3. Obtain explicit approval before committing the exact reviewed change; merge remains separate.
-4. After commit, hand off to NikolaTesla for the design pass in STATE-HANDOFF-001. The user will return for stage, role, and agent-assignment alignment. Await user-supplied source and create an exact named-file assignment before reading it.
+## Boundaries
 
-This assignment completes only when the reviewed scaffold is committed and verified. It does not complete Stage 00 of either track.
+Exact target-source read list: `[]`. Source inspection, source editing, implementation, execution trials and final role/agent assignments have not begun. Framework revision `2c7872e70d68b690f99cc216fc07ba3411224aeb` remains proposed, not adopted. No framework responsibility or authority determinations are made in this handoff.
 
-Related documents: ARCH-PRJ-001, BASE-FWK-001, STATE-ROOT-001.
+The user requested the upstream instruction changes and collection-task delegation as follow-up. Neither has been performed here. The corrected collection task excludes suitability ranking, integration-effort assessment and recommendations.
+
+## Next entry point
+
+1. Read AGENTS.md, this checkpoint and `AgentState/DESIGN-HANDOFF.md` on the checkpoint branch.
+2. Use TASK-ANL-RES-001 for the pending tool suggestions and factual documentation collection. Read STATE-ANL-RES-001 for context only as needed.
+3. Return the gathered material for separate evaluation and continued project design.
+4. Resolve the outstanding requirements and limits with the user before selecting architecture. Preserve the original objectives and scratchpad.
+
+Open questions include context-budget units, splitting/overlap rules, useful metadata, source fidelity, identity across revisions, supported C# coverage, host/runtime constraints, analysis depth and acceptance criteria. See REQ-ANL-001 and REQ-SRC-001; do not reopen the settled initial language or confirmed outcome.
+
+## Evidence and persistence
+
+The draft workspace was materialized from exact-revision GitHub documentation because direct clone was unavailable. The base commit was rechecked before saving. The checkpoint contains documentation only; source blobs and unrelated repository contents are preserved. Merge to main remains separate.
+
+Related: STATE-HANDOFF-001, STATE-DEC-001, REVIEW-DES-001, REQ-ANL-001, REQ-SRC-001, TASK-ANL-RES-001, STATE-ANL-RES-001.

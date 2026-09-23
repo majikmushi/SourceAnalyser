@@ -5,13 +5,15 @@ status: draft
 stage: 00
 ---
 
-# WiiArtDownloader project objectives and structure
+# SourceAnalyser project objectives and structure
 
 ## Purpose
 
-Develop a staged, Python-assisted process for analysing the WiiArtDownloader C# source. The project has two related outcomes, tracked separately: an analyser that produces navigable, traceable source fragments and records; and an evidence-based account of selected source behaviour, data, and relationships.
+Develop a reusable, staged, Python-assisted analyser, initially focused on C# source. WiiArtDownloader is its first analysis application. The project has two related outcomes, tracked separately: an analyser that produces navigable, traceable source fragments and records; and an evidence-based account of selected source behaviour, data, and relationships for each authorized analysis project.
 
 That account should support decisions about refactoring or reimplementing selected capabilities in another language. The original source remains evidence of existing behaviour; its file, class, and language structure does not dictate the replacement design.
+
+The reusable scope is confirmed by the user in D-011. Support for additional languages remains undecided. How separate analysis projects are represented and stored remains a later design question; the current layout is not an approved multi-project architecture.
 
 ## Objectives
 
